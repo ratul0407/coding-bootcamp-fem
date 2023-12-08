@@ -43,35 +43,67 @@
           </div>
           <!-- next and previous icon -->
           <div class="icons-container">
-            <button>
+            <button
+              type="button"
+              aria-label="previous slide"
+              aria-controls="text-container"
+            >
               <img class="icon prev" src="icon-prev.svg" alt="" />
             </button>
-            <button>
+            <button
+              type="button"
+              aria-label="next slide"
+              aria-controls="text-container"
+            >
               <img class="icon next" src="icon-next.svg" alt="" />
             </button>
           </div>
         </div>
         <div
+          role="region"
+          aria-label="testimonials slide"
           class="text-container mt-28 text-center relative lg:text-left lg:mt-0 lg:col-start-1 lg:row-start-1 lg:justify-self-center lg:translate-x-[5.2rem] lg:z-50 lg:translate-y-10"
         >
-          <div class="visible-review feedback-container">
-            <blockquote class="feedback feedback-tanya">
+          <div
+            role="group"
+            aria-label="slide 1 of 2"
+            class="visible-review feedback-container visible"
+          >
+            <blockquote
+              aria-live="polite"
+              id="text-container"
+              class="feedback feedback-tanya"
+            >
               I've been interested in coding for a while but never taken the
-              jump, untill now. I couldn't recommend thes course enough. I'm now
+              jump, untill now. I couldn't recommend this course enough. I'm now
               in the job of my dreams and so excited about the future.
             </blockquote>
-            <p class="name name-tanya">Tanya Sinclair</p>
-            <p class="role role-tanya">UX Engineer</p>
+            <div aria-live="polite">
+              <p class="sr-only">Review from</p>
+              <p class="name name-tanya">Tanya Sinclair</p>
+              <p class="role role-tanya">UX Engineer</p>
+            </div>
           </div>
-          <div class="hidden-review feedback-container">
-            <blockquote class="feedback feedback-john">
+          <div
+            role="group"
+            aria-label="slide 2 of 2"
+            class="hidden-review feedback-container invisible"
+          >
+            <blockquote
+              aria-live="polite"
+              id="text-container"
+              class="feedback feedback-john"
+            >
               If you want to lay the best foundation possible I'd recommend
               taking this course. The depth the instructors go into is
               incredible. I now feel so confident about starting up as a
               professional developer.
             </blockquote>
-            <p class="name name-john">John Tarkpor</p>
-            <p class="role role-john">Junior Front End Developer</p>
+            <div aria-live="polite">
+              <p class="sr-only">Review from</p>
+              <p class="name name-john">John Tarkpor</p>
+              <p class="role role-john">Junior Front End Developer</p>
+            </div>
           </div>
         </div>
       </div>
