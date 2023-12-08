@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vite App</title>
+  </head>
+  <body
+    class="font-inter min-h-screen bg-[url('../pattern-curve.svg')] bg-no-repeat bg-contain bg-left-bottom lg:grid lg:place-content-center"
+  >
+    <main class="">
+      <div
+        class="container mx-auto lg:grid lg:grid-cols-2 lg:items-center lg:-translate-y-16"
+      >
+        <!-- container for all the images -->
+        <div
+          class="container mx-auto img-container relative lg:col-start-2 lg:-translate-x-10"
+        >
+          <!-- container for the two main images (tanya and john) -->
+          <div class="relative person-img mt-10">
+            <img
+              class="img active"
+              src="image-tanya.jpg"
+              alt="Image of Tanya"
+            />
+            <img
+              class="img inactive"
+              src="image-john.jpg"
+              alt="Image of John"
+            />
+            <img
+              class="absolute -top-6 md:-top-12 lg:left-1/2 lg:-translate-x-1/2 xl:scale-110"
+              src="pattern-bg.svg"
+              alt=""
+            />
+          </div>
+          <!-- next and previous icon -->
+          <div class="icons-container">
+            <button>
+              <img class="icon prev" src="icon-prev.svg" alt="" />
+            </button>
+            <button>
+              <img class="icon next" src="icon-next.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div
+          class="text-container mt-28 text-center relative lg:text-left lg:mt-0 lg:col-start-1 lg:row-start-1 lg:justify-self-center lg:translate-x-[5.2rem] lg:z-50 lg:translate-y-10"
+        >
+          <div class="visible-review feedback-container">
+            <blockquote class="feedback feedback-tanya">
+              I've been interested in coding for a while but never taken the
+              jump, untill now. I couldn't recommend thes course enough. I'm now
+              in the job of my dreams and so excited about the future.
+            </blockquote>
+            <p class="name name-tanya">Tanya Sinclair</p>
+            <p class="role role-tanya">UX Engineer</p>
+          </div>
+          <div class="hidden-review feedback-container">
+            <blockquote class="feedback feedback-john">
+              If you want to lay the best foundation possible I'd recommend
+              taking this course. The depth the instructors go into is
+              incredible. I now feel so confident about starting up as a
+              professional developer.
+            </blockquote>
+            <p class="name name-john">John Tarkpor</p>
+            <p class="role role-john">Junior Front End Developer</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
