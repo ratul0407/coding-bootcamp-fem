@@ -13,7 +13,7 @@
     <title>Vite App</title>
   </head>
   <body
-    class="font-inter min-h-screen bg-[url('../pattern-curve.svg')] bg-no-repeat bg-contain bg-left-bottom lg:grid lg:place-content-center"
+    class="font-inter min-h-screen bg-[url('../pattern-curve.svg')] bg-no-repeat bg-auto bg-left-bottom lg:grid lg:place-content-center"
   >
     <main class="">
       <div
@@ -62,12 +62,12 @@
         <div
           role="region"
           aria-label="testimonials slide"
-          class="text-container mt-28 text-center relative lg:text-left lg:mt-0 lg:col-start-1 lg:row-start-1 lg:justify-self-center lg:translate-x-[5.2rem] lg:z-50 lg:translate-y-10"
+          class="text-container mt-28 text-center relative lg:text-left lg:mt-0 lg:col-start-1 lg:row-start-1 lg:justify-self-center lg:translate-x-[5.2rem] lg:z-50"
         >
           <div
             role="group"
             aria-label="slide 1 of 2"
-            class="visible-review feedback-container visible"
+            class="visible-review feedback-container visible lg:translate-y-8"
           >
             <blockquote
               aria-live="polite"
@@ -75,10 +75,10 @@
               class="feedback feedback-tanya"
             >
               I've been interested in coding for a while but never taken the
-              jump, untill now. I couldn't recommend this course enough. I'm now
+              jump, until now. I couldn't recommend this course enough. I'm now
               in the job of my dreams and so excited about the future.
             </blockquote>
-            <div aria-live="polite">
+            <div class="name-role-container" aria-live="polite">
               <p class="sr-only">Review from</p>
               <p class="name name-tanya">Tanya Sinclair</p>
               <p class="role role-tanya">UX Engineer</p>
@@ -87,7 +87,7 @@
           <div
             role="group"
             aria-label="slide 2 of 2"
-            class="hidden-review feedback-container invisible"
+            class="hidden-review feedback-container invisible lg:translate-y-8"
           >
             <blockquote
               aria-live="polite"
@@ -99,7 +99,7 @@
               incredible. I now feel so confident about starting up as a
               professional developer.
             </blockquote>
-            <div aria-live="polite">
+            <div class="name-role-container" aria-live="polite">
               <p class="sr-only">Review from</p>
               <p class="name name-john">John Tarkpor</p>
               <p class="role role-john">Junior Front End Developer</p>
