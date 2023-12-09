@@ -26,8 +26,8 @@
 <div>
   <h3>Links</h3>
   <ul>
-    <li>Live Site Url : </li>
-    <li>View Challenge Page : </li>
+    <li>Live Site Url : https://celebrated-torrone-06d01e.netlify.app/</li>
+    <li>View Challenge Page : https://www.frontendmentor.io/solutions/coding-bootcamp-testimonials-slider-solution-tailiwndcss-vite-nNvMGS9x_f</li>
   </ul>
 </div>
 <div>
